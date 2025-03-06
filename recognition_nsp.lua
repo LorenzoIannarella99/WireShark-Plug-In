@@ -92,7 +92,7 @@ function l7_proto.dissector(tvb, pinfo, tree)
 
 			--         Send Data       
 			if stun_type == "0x0016"  then
-                -- da sistemare, guarda meet_test1.pcap
+                
 				protocol = (flows_table[key] ~= nil) and flows_table[key] or (flows_table[key2] ~= nil) and flows_table[key2] or ""
 			
 				--  Data Indication 
